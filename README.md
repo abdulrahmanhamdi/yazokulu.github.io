@@ -1,0 +1,1 @@
+# yazokulu.github.io
