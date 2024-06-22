@@ -8,12 +8,6 @@ body {
     min-height: 100vh;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
 header {
     background-color: #4D897C;
     color: #fff;
@@ -32,11 +26,13 @@ header .logo {
 
 header h1 {
     margin: 0;
+    font-size: 1.5rem; /* Adjusted font size for better readability on mobile */
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 10px; /* Increased margin for better spacing on mobile */
 }
 
 header nav ul li {
@@ -47,14 +43,11 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-a {
-    text-decoration: none;
+    font-size: 0.9rem; /* Adjusted font size for better readability on mobile */
 }
 
 main {
-    padding: 2rem;
+    padding: 1rem; /* Reduced padding for better content visibility on mobile */
     flex: 1;
 }
 
@@ -71,4 +64,27 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    header .logo {
+        height: 60px; 
+    }
+
+    header h1 {
+        font-size: 1.2rem; 
+    }
+
+    header nav ul li {
+        margin: 0 5px; 
+    }
+
+    header nav ul li a {
+        font-size: 0.8rem; 
+    }
+
+    main {
+        padding: 0.5rem; 
+    }
 }
