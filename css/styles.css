@@ -26,29 +26,95 @@ header .logo {
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem; /* Adjusted font size for better readability on mobile */
+    font-size: 1.5rem; 
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px; /* Increased margin for better spacing on mobile */
+    margin: 0;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    position: relative;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem; /* Adjusted font size for better readability on mobile */
+    padding: 10px 15px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #3b6f63;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4D897C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header nav ul li .dropdown-content li {
+    display: block;
+}
+
+header nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li .dropdown-content li a:hover {
+    background-color: #3b6f63;
 }
 
 main {
-    padding: 1rem; /* Reduced padding for better content visibility on mobile */
+    padding: 1rem; 
     flex: 1;
+}
+#h2 {
+    color: #4D897C;
 }
 
 main a {
